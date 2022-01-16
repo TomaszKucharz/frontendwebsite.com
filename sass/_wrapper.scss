@@ -270,10 +270,18 @@
       .article2 {
         @include blueRibbon(1, 1, 2, 4);
         @include p_Art(2, 2, 3, 3);
-        #someEx {
-          color: #1784b6;
+        #someEX {
+          grid-area: 2/2/3/3;
           text-decoration: none;
           cursor: pointer;
+        }
+        .someMain1 {
+          display: none;
+
+          &.listOn {
+            color: #3d89d1cc;
+            display: block;
+          }
         }
       }
       .article3 {
