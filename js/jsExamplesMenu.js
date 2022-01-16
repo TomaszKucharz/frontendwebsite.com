@@ -10,11 +10,10 @@ const nowa = () =>
         someMain1.classList.add(`listOn`);
     }, 300);
 }
-someMain.addEventListener(`mouseover`, nowa);
+someMain.addEventListener(`mouseenter`, nowa);
 someMain1.addEventListener(`mouseover`, () =>
 {
     clearTimeout(nowa);
-    console.log(`jestem w drugiej`);
 })
 someMain1.addEventListener(`mouseout`, function () 
 {
