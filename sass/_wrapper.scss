@@ -270,6 +270,11 @@
       .article2 {
         @include blueRibbon(1, 1, 2, 4);
         @include p_Art(2, 2, 3, 3);
+        #someEx {
+          color: #1784b6;
+          text-decoration: none;
+          cursor: pointer;
+        }
       }
       .article3 {
         @include blueRibbon(1, 1, 2, 4);
