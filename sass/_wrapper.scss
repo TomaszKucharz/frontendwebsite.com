@@ -85,6 +85,7 @@
     grid-row-end: $rowEnd;
     grid-column-end: $columnEnd;
     text-align: center;
+    font-family: Montserrat;
     margin: 5vh auto 5vh auto;
     a {
       padding: 10px;
@@ -93,10 +94,11 @@
       color: #8c1010;
       border: 3px solid#8c1010;
     }
-    // a:hover {
-    //   border: 3px solid#4d4d4d;
-    //   color: #4d4d4d;
-    // }
+    a:hover {
+      border: 3px solid#8c1010;
+      background-color: #8c1010;
+      color: #ffffff;
+    }
   }
 }
 @mixin backArrow {
