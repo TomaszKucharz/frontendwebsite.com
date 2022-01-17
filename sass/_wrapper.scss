@@ -274,12 +274,12 @@
           grid-area: 2/2/3/4;
         }
         @include p_Art(2, 2, 3, 3);
+
         .anyList {
           grid-area: 2/2/3/3;
           display: block;
           font-family: $font_familly_Articles;
-          font-size: $fontsize_Articles;
-          margin-left: 3vw;
+          margin-left: 3vh;
           max-width: 230px;
           padding: 1vh;
           text-align: center;
@@ -301,11 +301,15 @@
         .anyList3,
         .anyList4,
         .anyList5 {
-          padding-top: 1vh;
           display: none;
+          padding-top: 1.5vh;
+          a {
+            color: rgb(45, 150, 211);
+            text-decoration: none;
+            list-style: none;
+          }
         }
         & .listOn {
-          color: rgb(10, 115, 177);
           display: block;
         }
       }
