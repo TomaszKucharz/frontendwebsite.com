@@ -23,47 +23,6 @@
     }
   }
 }
-// @mixin picture($rowStar: 0, $columnStart: 0, $rowEnd: 0, $columnEnd: 0) {
-//   .picture {
-//     grid-row-start: $rowStar;
-//     grid-column-start: $columnStart;
-//     grid-row-end: $rowEnd;
-//     grid-column-end: $columnEnd;
-//     margin: 10% 10%;
-//     max-width: 275px;
-//     height: 300px;
-//     border-radius: 10%;
-//     transition: 0.5s;
-//     img {
-//       border-radius: 10%;
-//       width: 100%;
-//       height: 100%;
-//     }
-//   }
-//   .picture:hover {
-//     cursor: pointer;
-//     transform: scale(1.1);
-//     box-shadow: 0 0 15px var(--box_SA);
-//   }
-// }
-@mixin icons($rowStart: 0, $columnStart: 0, $rowEnd: 0, $columnEnd: 0) {
-  .icons {
-    grid-row-start: $rowStart;
-    grid-column-start: $columnStart;
-    grid-row-end: $rowEnd;
-    grid-column-end: $columnEnd;
-    font-size: 70px;
-    text-align: center;
-    margin-top: 3vh;
-  }
-  .fab {
-    transition: 1s;
-  }
-  .fab:hover {
-    transform: scale(1.8);
-  }
-}
-
 @mixin p_Art($rowStar: 0, $columnStart: 0, $rowEnd: 0, $columnEnd: 0) {
   p {
     margin: 1vh 3vh;
@@ -259,9 +218,6 @@
         .picture {
           display: none;
         }
-        .icons {
-          display: none;
-        }
       }
       .article1 {
         @include blueRibbon(1, 1, 2, 4);
@@ -277,9 +233,8 @@
 
         .anyList {
           grid-area: 2/2/3/3;
-          display: block;
           font-family: $font_familly_Articles;
-          margin-left: 3vh;
+          margin: 4vh auto;
           max-width: 230px;
           padding: 1vh;
           text-align: center;
@@ -514,9 +469,6 @@
           );
         grid-template-rows: 2fr;
         column-gap: 20px;
-        .icons {
-          display: block;
-        }
       }
       .article1 {
         @include blueRibbon(1, 1, 2, 5);
@@ -526,16 +478,11 @@
       .article2 {
         @include blueRibbon(1, 1, 2, 5);
         @include p_Art(2, 2, 3, 4);
-        @include icons(3, 2, 3, 4);
       }
       .article3 {
         @include blueRibbon(1, 1, 2, 5);
         @include p_Art(2, 2, 3, 4);
       }
-      // .article4 {
-      //   @include blueRibbon(1, 1, 2, 5);
-      //   @include p_Art(2, 2, 3, 4);
-      // }
     }
     .footer {
       grid-area: 4/1/5/4;
