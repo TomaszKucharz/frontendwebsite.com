@@ -25,7 +25,7 @@
 }
 @mixin p_Art($rowStar: 0, $columnStart: 0, $rowEnd: 0, $columnEnd: 0) {
   p {
-    margin: 1vh 3vh;
+    margin: 1vh 0;
     grid-row-start: $rowStar;
     grid-column-start: $columnStart;
     grid-row-end: $rowEnd;
@@ -226,46 +226,46 @@
       }
       .article2 {
         @include blueRibbon(1, 1, 2, 4);
-        #p2 {
-          grid-area: 2/2/3/4;
-        }
         @include p_Art(2, 2, 3, 3);
-
-        .anyList {
+        #p2 {
           grid-area: 2/2/3/3;
-          font-family: $font_familly_Articles;
-          margin: 4vh auto;
-          max-width: 230px;
-          padding: 1vh;
-          text-align: center;
-          text-transform: uppercase;
-          font-size: 16px;
-          border: 3px solid #8c1010;
-          border-radius: 25px;
-          background-color: transparent;
-          color: #8c1010;
-          list-style: none;
-          cursor: pointer;
-        }
-        .anyList:hover {
-          color: #fff;
-          background-color: #8c1010;
-        }
-        .anyList1,
-        .anyList2,
-        .anyList3,
-        .anyList4,
-        .anyList5 {
-          display: none;
-          padding-top: 1.5vh;
-          a {
-            color: rgb(45, 150, 211);
-            text-decoration: none;
+
+          .anyList {
+            grid-area: 2/2/3/3;
+            font-family: $font_familly_Articles;
+            margin: 4vh auto 4vh auto;
+            max-width: 230px;
+            padding: 1vh;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 16px;
+            border: 3px solid #8c1010;
+            border-radius: 25px;
+            background-color: transparent;
+            color: #8c1010;
             list-style: none;
+            cursor: pointer;
           }
-        }
-        & .listOn {
-          display: block;
+          .anyList:hover {
+            color: #fff;
+            background-color: #8c1010;
+          }
+          .anyList1,
+          .anyList2,
+          .anyList3,
+          .anyList4,
+          .anyList5 {
+            display: none;
+            padding-top: 1.5vh;
+            a {
+              color: rgb(45, 150, 211);
+              text-decoration: none;
+              list-style: none;
+            }
+          }
+          & .listOn {
+            display: block;
+          }
         }
       }
       .article3 {
@@ -477,7 +477,13 @@
       }
       .article2 {
         @include blueRibbon(1, 1, 2, 5);
-        @include p_Art(2, 2, 3, 4);
+        #p2 {
+          @include p_Art(2, 2, 3, 4);
+          grid-area: 2/2/3/4;
+          .anyList {
+            grid-area: 2/2/3/4;
+          }
+        }
       }
       .article3 {
         @include blueRibbon(1, 1, 2, 5);
