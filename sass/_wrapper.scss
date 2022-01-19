@@ -47,7 +47,7 @@
     font-family: Montserrat;
     margin: 5vh auto 5vh auto;
     a {
-      padding: 10px;
+      padding: 15px;
       text-decoration: none;
       text-transform: uppercase;
       color: #8c1010;
@@ -58,6 +58,71 @@
       border: 3px solid#8c1010;
       background-color: #8c1010;
       color: #ffffff;
+    }
+  }
+}
+@mixin pArtButton2($rowStar: 0, $columnStart: 0, $rowEnd: 0, $columnEnd: 0) {
+  #artContact2 {
+    grid-row-start: $rowStar;
+    grid-column-start: $columnStart;
+    grid-row-end: $rowEnd;
+    grid-column-end: $columnEnd;
+    text-align: center;
+    font-family: Montserrat;
+    margin: 5vh auto 5vh auto;
+    cursor: pointer;
+    padding: 15px;
+    border: 3px solid#8c1010;
+    border-radius: 25px;
+
+    li {
+      list-style: none;
+      padding-top: 20px;
+      display: none;
+    }
+    .btn {
+      text-transform: uppercase;
+      color: #8c1010;
+    }
+    li#anyList a {
+      text-decoration: none;
+      color: #8c1010;
+    }
+
+    .listOn {
+      display: block;
+    }
+  }
+  #artContact2:hover {
+    grid-row-start: $rowStar;
+    grid-column-start: $columnStart;
+    grid-row-end: $rowEnd;
+    grid-column-end: $columnEnd;
+    text-align: center;
+    font-family: Montserrat;
+    margin: 5vh auto 5vh auto;
+    cursor: pointer;
+    padding: 15px;
+    border: 3px solid#8c1010;
+    background-color: #8c1010;
+    border-radius: 25px;
+
+    li {
+      list-style: none;
+      padding-top: 20px;
+      display: none;
+    }
+    .btn {
+      text-transform: uppercase;
+      color: white;
+    }
+    li#anyList a {
+      text-decoration: none;
+      color: rgb(7, 153, 167);
+    }
+
+    .listOn {
+      display: block;
     }
   }
 }
@@ -227,46 +292,7 @@
       .article2 {
         @include blueRibbon(1, 1, 2, 4);
         @include p_Art(2, 2, 3, 3);
-        #p2 {
-          grid-area: 2/2/3/3;
-
-          .anyList {
-            grid-area: 2/2/3/3;
-            font-family: $font_familly_Articles;
-            margin: 4vh auto 4vh auto;
-            max-width: 230px;
-            padding: 1vh;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 16px;
-            border: 3px solid #8c1010;
-            border-radius: 25px;
-            background-color: transparent;
-            color: #8c1010;
-            list-style: none;
-            cursor: pointer;
-          }
-          .anyList:hover {
-            color: #fff;
-            background-color: #8c1010;
-          }
-          .anyList1,
-          .anyList2,
-          .anyList3,
-          .anyList4,
-          .anyList5 {
-            display: none;
-            padding-top: 1.5vh;
-            a {
-              color: rgb(45, 150, 211);
-              text-decoration: none;
-              list-style: none;
-            }
-          }
-          & .listOn {
-            display: block;
-          }
-        }
+        @include pArtButton2(3, 2, 4, 3);
       }
       .article3 {
         @include blueRibbon(1, 1, 2, 4);
@@ -385,6 +411,7 @@
       .article2 {
         @include blueRibbon(1, 1, 2, 4);
         @include p_Art(2, 2, 3, 3);
+        @include pArtButton2(3, 2, 4, 3);
       }
       .article3 {
         @include blueRibbon(1, 1, 2, 4);
@@ -467,7 +494,7 @@
             50px,
             10vw
           );
-        grid-template-rows: 2fr;
+        grid-template-rows: 4fr;
         column-gap: 20px;
       }
       .article1 {
@@ -477,13 +504,8 @@
       }
       .article2 {
         @include blueRibbon(1, 1, 2, 5);
-        #p2 {
-          @include p_Art(2, 2, 3, 4);
-          grid-area: 2/2/3/4;
-          .anyList {
-            grid-area: 2/2/3/4;
-          }
-        }
+        @include p_Art(2, 2, 3, 4);
+        @include pArtButton2(3, 2, 4, 4);
       }
       .article3 {
         @include blueRibbon(1, 1, 2, 5);

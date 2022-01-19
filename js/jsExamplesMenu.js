@@ -1,8 +1,8 @@
-const idList = document.querySelector(`.anyList`);
+const idList = document.querySelector(`ul.anyList`);
 
 function clickFunction()
 {
-    document.querySelector(`.anyList1`).classList.toggle(`listOn`)
+        document.querySelector(`#anyList.anyList1`).classList.toggle(`listOn`)
 };
 idList.addEventListener(`click`, clickFunction);
 
