@@ -1,213 +1,213 @@
 @mixin blueRibbon($rowStar: 0, $columnStart: 0, $rowEnd: 0, $columnEnd: 0) {
-  .blueRibbon {
-    grid-row-start: $rowStar;
-    grid-column-start: $columnStart;
-    grid-row-end: $rowEnd;
-    grid-column-end: $columnEnd;
-    width: 100%;
-    height: 100%;
-    height: var(--height_blueRibbon);
-    box-shadow: 0 0 1px 1px var(--box_SA);
-    border-radius: var(--border_radius_blueRibbon);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 4vh;
-    font-family: $font_familly_Articles;
-    &.off {
-      background-color: white;
-    }
-    &.active {
-      background-color: $redRibbon;
-      box-shadow: 0 0 1px 1px $redRibbon;
-    }
-  }
+	.blueRibbon {
+		grid-row-start: $rowStar;
+		grid-column-start: $columnStart;
+		grid-row-end: $rowEnd;
+		grid-column-end: $columnEnd;
+		width: 100%;
+		height: 100%;
+		height: var(--height_blueRibbon);
+		box-shadow: 0 0 1px 1px var(--box_SA);
+		border-radius: var(--border_radius_blueRibbon);
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 600;
+		line-height: 4vh;
+		font-family: $font_familly_Articles;
+		&.off {
+			background-color: white;
+		}
+		&.active {
+			background-color: $redRibbon;
+			box-shadow: 0 0 1px 1px $redRibbon;
+		}
+	}
 }
 @mixin p_Art($rowStar: 0, $columnStart: 0, $rowEnd: 0, $columnEnd: 0) {
-  p {
-    margin: 1vh 0;
-    grid-row-start: $rowStar;
-    grid-column-start: $columnStart;
-    grid-row-end: $rowEnd;
-    grid-column-end: $columnEnd;
-    justify-self: center;
-    align-self: center;
-    font-family: $font_familly_Articles;
-    font-size: $fontsize_Articles;
-    line-height: 4vh;
-  }
+	p {
+		margin: 1vh 0;
+		grid-row-start: $rowStar;
+		grid-column-start: $columnStart;
+		grid-row-end: $rowEnd;
+		grid-column-end: $columnEnd;
+		justify-self: center;
+		align-self: center;
+		font-family: $font_familly_Articles;
+		font-size: $fontsize_Articles;
+		line-height: 4vh;
+	}
 }
 @mixin pArtButton($rowStar: 0, $columnStart: 0, $rowEnd: 0, $columnEnd: 0) {
-  #artContact {
-    grid-row-start: $rowStar;
-    grid-column-start: $columnStart;
-    grid-row-end: $rowEnd;
-    grid-column-end: $columnEnd;
-    text-align: center;
-    font-family: Montserrat;
-    margin: 5vh auto 5vh auto;
-    a {
-      padding: 15px;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #8c1010;
-      border: 3px solid#8c1010;
-      border-radius: 25px;
-    }
-    a:hover {
-      border: 3px solid#8c1010;
-      background-color: #8c1010;
-      color: #ffffff;
-    }
-  }
+	#artContact {
+		grid-row-start: $rowStar;
+		grid-column-start: $columnStart;
+		grid-row-end: $rowEnd;
+		grid-column-end: $columnEnd;
+		text-align: center;
+		font-family: Montserrat;
+		margin: 5vh auto 5vh auto;
+		a {
+			padding: 15px;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #8c1010;
+			border: 3px solid#8c1010;
+			border-radius: 25px;
+		}
+		a:hover {
+			border: 3px solid#8c1010;
+			background-color: #8c1010;
+			color: #ffffff;
+		}
+	}
 }
 @mixin pArtButton2($rowStar: 0, $columnStart: 0, $rowEnd: 0, $columnEnd: 0) {
-  #artContact2 {
-    grid-row-start: $rowStar;
-    grid-column-start: $columnStart;
-    grid-row-end: $rowEnd;
-    grid-column-end: $columnEnd;
-    text-align: center;
-    font-family: Montserrat;
-    margin: 5vh auto 5vh auto;
-    cursor: pointer;
-    padding: 15px;
-    border: 3px solid#8c1010;
-    border-radius: 25px;
+	#artContact2 {
+		grid-row-start: $rowStar;
+		grid-column-start: $columnStart;
+		grid-row-end: $rowEnd;
+		grid-column-end: $columnEnd;
+		text-align: center;
+		font-family: Montserrat;
+		margin: 5vh auto 5vh auto;
+		cursor: pointer;
+		padding: 15px;
+		border: 3px solid#8c1010;
+		border-radius: 25px;
 
-    li {
-      list-style: none;
-      padding-top: 20px;
-      display: none;
-    }
-    .btn {
-      text-transform: uppercase;
-      color: #8c1010;
-    }
-    li#anyList a {
-      text-decoration: none;
-      color: #8c1010;
-    }
+		li {
+			list-style: none;
+			padding-top: 20px;
+			display: none;
+		}
+		.btn {
+			text-transform: uppercase;
+			color: #8c1010;
+		}
+		li#anyList a {
+			text-decoration: none;
+			color: #8c1010;
+		}
 
-    .listOn {
-      display: block;
-    }
-  }
-  #artContact2:hover {
-    grid-row-start: $rowStar;
-    grid-column-start: $columnStart;
-    grid-row-end: $rowEnd;
-    grid-column-end: $columnEnd;
-    text-align: center;
-    font-family: Montserrat;
-    margin: 5vh auto 5vh auto;
-    cursor: pointer;
-    padding: 15px;
-    border: 3px solid#8c1010;
-    background-color: #8c1010;
-    border-radius: 25px;
+		.listOn {
+			display: block;
+		}
+	}
+	#artContact2:hover {
+		grid-row-start: $rowStar;
+		grid-column-start: $columnStart;
+		grid-row-end: $rowEnd;
+		grid-column-end: $columnEnd;
+		text-align: center;
+		font-family: Montserrat;
+		margin: 5vh auto 5vh auto;
+		cursor: pointer;
+		padding: 15px;
+		border: 3px solid#8c1010;
+		background-color: #8c1010;
+		border-radius: 25px;
 
-    li {
-      list-style: none;
-      padding-top: 20px;
-      display: none;
-    }
-    .btn {
-      text-transform: uppercase;
-      color: white;
-    }
-    li#anyList a {
-      text-decoration: none;
-      color: rgb(7, 153, 167);
-    }
+		li {
+			list-style: none;
+			padding-top: 20px;
+			display: none;
+		}
+		.btn {
+			text-transform: uppercase;
+			color: white;
+		}
+		li#anyList a {
+			text-decoration: none;
+			color: rgb(7, 153, 167);
+		}
 
-    .listOn {
-      display: block;
-    }
-  }
+		.listOn {
+			display: block;
+		}
+	}
 }
 @mixin backArrow {
-  #backArrow {
-    z-index: 2;
-    position: fixed;
-    display: none;
-    right: 2vw;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    padding-top: 8px;
-    background-color: #c9c9c9;
-    border-radius: 100%;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-  }
-  #backArrow:hover {
-    background-color: #b2b2b2;
-  }
+	#backArrow {
+		z-index: 2;
+		position: fixed;
+		display: none;
+		right: 2vw;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		padding-top: 8px;
+		background-color: #c9c9c9;
+		border-radius: 100%;
+		font-size: 20px;
+		color: white;
+		cursor: pointer;
+	}
+	#backArrow:hover {
+		background-color: #b2b2b2;
+	}
 }
 @mixin light {
-  #backgroundLight {
-    z-index: 2;
-    position: fixed;
-    font-size: 2vh;
-    top: 3.5vh;
-    left: 2vw;
-    width: 50px;
-    height: 30px;
-    box-shadow: 0 0 1px 1px #c9c9c9;
-    border-radius: 20px;
-    text-align: center;
-    padding-top: 5px;
-    color: #c8c8c8;
+	#backgroundLight {
+		z-index: 2;
+		position: fixed;
+		font-size: 15px;
+		top: 3.45vh;
+		left: 2vw;
+		width: 50px;
+		height: 25px;
+		box-shadow: 0 0 1px 1px #c9c9c9;
+		border-radius: 20px;
+		text-align: center;
+		padding: 5px;
+		color: #c8c8c8;
 
-    #dark {
-      display: block;
-    }
-    #light {
-      display: none;
-    }
-  }
-  #backgroundLight:hover {
-    color: #b3b3b3;
-    cursor: pointer;
-  }
+		#dark {
+			display: block;
+		}
+		#light {
+			display: none;
+		}
+	}
+	#backgroundLight:hover {
+		color: #b3b3b3;
+		cursor: pointer;
+	}
 }
 @mixin arrows($rowStar: 0, $columnStart: 0, $rowEnd: 0, $columnEnd: 0) {
-  #arrow {
-    display: grid;
-    grid-row-start: $rowStar;
-    grid-column-start: $columnStart;
-    grid-row-end: $rowEnd;
-    grid-column-end: $columnEnd;
-    margin-bottom: 7vh;
-    align-self: end;
-    justify-self: center;
-    transform: rotate(-180deg);
-    color: rgba($color: #9c0606, $alpha: 0.9);
-    animation-name: arrows;
-    animation-delay: 2s;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
-  @keyframes arrows {
-    0% {
-      margin-bottom: 19vh;
-      color: rgba($color: #9c0606, $alpha: 0.9);
-    }
-    30% {
-      margin-bottom: 16vh;
-      color: rgba($color: #9c0606, $alpha: 0.9);
-    }
-    60% {
-      margin-bottom: 13vh;
-      color: rgba($color: #9c0606, $alpha: 0.9);
-    }
-    85% {
-      margin-bottom: 10vh;
-      color: rgba($color: #9c0606, $alpha: 0.9);
-    }
-  }
+	#arrow {
+		display: grid;
+		grid-row-start: $rowStar;
+		grid-column-start: $columnStart;
+		grid-row-end: $rowEnd;
+		grid-column-end: $columnEnd;
+		margin-bottom: 7vh;
+		align-self: end;
+		justify-self: center;
+		transform: rotate(-180deg);
+		color: rgba($color: #9c0606, $alpha: 0.9);
+		animation-name: arrows;
+		animation-delay: 2s;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+	}
+	@keyframes arrows {
+		0% {
+			margin-bottom: 19vh;
+			color: rgba($color: #9c0606, $alpha: 0.9);
+		}
+		30% {
+			margin-bottom: 16vh;
+			color: rgba($color: #9c0606, $alpha: 0.9);
+		}
+		60% {
+			margin-bottom: 13vh;
+			color: rgba($color: #9c0606, $alpha: 0.9);
+		}
+		85% {
+			margin-bottom: 10vh;
+			color: rgba($color: #9c0606, $alpha: 0.9);
+		}
+	}
 }
 
 /************100**********/
@@ -215,39 +215,39 @@
 /************100**********/
 
 @media (min-width: 100px) {
-  .wrapper {
-    display: grid;
-    height: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    background-color: $backgroundcolor_Body;
-    #logo {
-      grid-area: 1/1/2/4;
-      height: 20%;
-      align-self: center;
-      justify-self: center;
-      transform: rotate(-90deg);
-    }
-    #backArrow {
-      display: none;
-    }
-    #arrow {
-      display: none;
-    }
+	.wrapper {
+		display: grid;
+		height: 100%;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		background-color: $backgroundcolor_Body;
+		#logo {
+			grid-area: 1/1/2/4;
+			height: 20%;
+			align-self: center;
+			justify-self: center;
+			transform: rotate(-90deg);
+		}
+		#backArrow {
+			display: none;
+		}
+		#arrow {
+			display: none;
+		}
 
-    .banner {
-      display: none;
-    }
-    #header {
-      display: none;
-    }
-    #articles {
-      display: none;
-    }
-    .footer {
-      display: none;
-    }
-  }
+		.banner {
+			display: none;
+		}
+		#header {
+			display: none;
+		}
+		#articles {
+			display: none;
+		}
+		.footer {
+			display: none;
+		}
+	}
 }
 
 /************360**********/
@@ -255,458 +255,449 @@
 /************360**********/
 
 @media (min-width: 360px) {
-  .wrapper {
-    display: grid;
+	.wrapper {
+		display: grid;
 
-    grid-template-columns: minmax(50px, 10vw) 1fr minmax(50px, 10vw);
-    grid-template-rows: 100vh repeat(10, 1fr);
-    background-color: $backgroundcolor_Body;
+		grid-template-columns: minmax(50px, 10vw) 1fr minmax(50px, 10vw);
+		grid-template-rows: 100vh repeat(10, 1fr);
+		background-color: $backgroundcolor_Body;
 
-    #logo {
-      transform: rotate(0deg);
-      height: 8%;
-    }
-    @include arrows(1, 2, 2, 3);
-    .banner {
-      display: none;
-    }
-    #header {
-      display: none;
-    }
-    #articles {
-      display: grid;
-      grid-area: 2/1/3/4;
-      #article {
-        display: grid;
-        grid-template-columns: minmax(50px, 10vw) 1fr minmax(50px, 10vw);
-        grid-template-rows: 2fr;
-        .picture {
-          display: none;
-        }
-      }
-      .article1 {
-        @include blueRibbon(1, 1, 2, 4);
-        @include p_Art(2, 2, 3, 3);
-        @include pArtButton(3, 2, 4, 3);
-      }
-      .article2 {
-        @include blueRibbon(1, 1, 2, 4);
-        @include p_Art(2, 2, 3, 3);
-        @include pArtButton2(3, 2, 4, 3);
-      }
-      .article3 {
-        @include blueRibbon(1, 1, 2, 4);
-        @include p_Art(2, 2, 3, 3);
-      }
-      .article4 {
-        @include blueRibbon(1, 1, 2, 4);
-        @include p_Art(2, 2, 3, 3);
-      }
-    }
-    .footer {
-      grid-area: 3/1/4/4;
-      display: grid;
-      height: auto;
-      background-color: var(--backgroundcolor_Footer);
-      grid-template-columns:
-        minmax(20px, 10vw) repeat(3, 1fr)
-        minmax(20px, 10vw);
-      grid-template-rows: repeat(3, 1fr);
-      #contact {
-        grid-area: 1/3/2/3;
-        display: none;
-      }
-      #adress {
-        display: none;
-        grid-area: 2/2/3/5;
-        justify-self: center;
-        align-self: flex-start;
-        h1 {
-          font-size: 3vh;
-          text-transform: uppercase;
-          color: $font_adress_Color;
-        }
-      }
-      h2 {
-        display: none;
-        grid-area: 4/2/5/5;
-        justify-self: center;
-        align-self: center;
-        font-size: 2vh;
-        color: var(--font_color_White);
-      }
-      h3 {
-        display: none;
-        grid-area: 4/2/5/5;
-        margin-top: 2vh;
-        justify-self: center;
-        align-self: flex-end;
-        font-size: 1.5vh;
-        color: var(--font_color_White);
-      }
-      p {
-        color: var(--font_color_White);
-        text-align: center;
-        padding: 1vh;
-        font-size: 2vh;
-      }
-      #email {
-        grid-area: 2/2/3/3;
-        justify-self: center;
-        align-self: center;
-        #iconMail {
-          font-size: 5vh;
-          color: var(--font_color_White);
-        }
-        #iconMail:hover {
-          color: var(--font_color_Yellow);
-        }
-      }
-      #facebook {
-        grid-area: 2/3/3/4;
-        justify-self: center;
-        align-self: center;
-        #iconFace {
-          font-size: 5vh;
-          color: var(--font_color_White);
-        }
-        #iconFace:hover {
-          color: var(--font_color_Yellow);
-        }
-      }
-      #linkedIn {
-        grid-area: 2/4/3/5;
-        justify-self: center;
-        align-self: center;
-        #iconLinkedIn {
-          font-size: 5vh;
-          color: var(--font_color_White);
-        }
-        #iconLinkedIn:hover {
-          color: var(--font_color_Yellow);
-        }
-      }
-    }
-  }
+		#logo {
+			transform: rotate(0deg);
+			height: 8%;
+		}
+		@include arrows(1, 2, 2, 3);
+		.banner {
+			display: none;
+		}
+		#header {
+			display: none;
+		}
+		#articles {
+			display: grid;
+			grid-area: 2/1/3/4;
+			#article {
+				display: grid;
+				grid-template-columns: minmax(50px, 10vw) 1fr minmax(50px, 10vw);
+				grid-template-rows: 2fr;
+				.picture {
+					display: none;
+				}
+			}
+			.article1 {
+				@include blueRibbon(1, 1, 2, 4);
+				@include p_Art(2, 2, 3, 3);
+				@include pArtButton(3, 2, 4, 3);
+			}
+			.article2 {
+				@include blueRibbon(1, 1, 2, 4);
+				@include p_Art(2, 2, 3, 3);
+				@include pArtButton2(3, 2, 4, 3);
+			}
+			.article3 {
+				@include blueRibbon(1, 1, 2, 4);
+				@include p_Art(2, 2, 3, 3);
+			}
+			.article4 {
+				@include blueRibbon(1, 1, 2, 4);
+				@include p_Art(2, 2, 3, 3);
+			}
+		}
+		.footer {
+			grid-area: 3/1/4/4;
+			display: grid;
+			height: auto;
+			background-color: var(--backgroundcolor_Footer);
+			grid-template-columns:
+				minmax(20px, 10vw) repeat(3, 1fr)
+				minmax(20px, 10vw);
+			grid-template-rows: repeat(3, 1fr);
+			#contact {
+				grid-area: 1/3/2/3;
+				display: none;
+			}
+			#adress {
+				display: none;
+				grid-area: 2/2/3/5;
+				justify-self: center;
+				align-self: flex-start;
+				h1 {
+					font-size: 3vh;
+					text-transform: uppercase;
+					color: $font_adress_Color;
+				}
+			}
+			h2 {
+				display: none;
+				grid-area: 4/2/5/5;
+				justify-self: center;
+				align-self: center;
+				font-size: 2vh;
+				color: var(--font_color_White);
+			}
+			h3 {
+				display: none;
+				grid-area: 4/2/5/5;
+				margin-top: 2vh;
+				justify-self: center;
+				align-self: flex-end;
+				font-size: 1.5vh;
+				color: var(--font_color_White);
+			}
+			p {
+				color: var(--font_color_White);
+				text-align: center;
+				padding: 1vh;
+				font-size: 2vh;
+			}
+			#email {
+				grid-area: 2/2/3/3;
+				justify-self: center;
+				align-self: center;
+				#iconMail {
+					font-size: 5vh;
+					color: var(--font_color_White);
+				}
+				#iconMail:hover {
+					color: var(--font_color_Yellow);
+				}
+			}
+			#facebook {
+				grid-area: 2/3/3/4;
+				justify-self: center;
+				align-self: center;
+				#iconFace {
+					font-size: 5vh;
+					color: var(--font_color_White);
+				}
+				#iconFace:hover {
+					color: var(--font_color_Yellow);
+				}
+			}
+			#linkedIn {
+				grid-area: 2/4/3/5;
+				justify-self: center;
+				align-self: center;
+				#iconLinkedIn {
+					font-size: 5vh;
+					color: var(--font_color_White);
+				}
+				#iconLinkedIn:hover {
+					color: var(--font_color_Yellow);
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 576px) {
-  .wrapper {
-    #logo {
-      height: 10%;
-    }
-    #articles {
-      display: grid;
-      grid-area: 2/1/3/4;
-      #article {
-        display: grid;
-        grid-template-columns: minmax(50px, 10vw) 1fr minmax(50px, 10vw);
-        grid-template-rows: 1fr;
-      }
-      .article1 {
-        @include blueRibbon(1, 1, 2, 4);
-        @include p_Art(2, 2, 3, 3);
-        @include pArtButton(3, 2, 4, 3);
-      }
-      .article2 {
-        @include blueRibbon(1, 1, 2, 4);
-        @include p_Art(2, 2, 3, 3);
-        @include pArtButton2(3, 2, 4, 3);
-      }
-      .article3 {
-        @include blueRibbon(1, 1, 2, 4);
-        @include p_Art(2, 2, 3, 3);
-      }
-      .article4 {
-        @include blueRibbon(1, 1, 2, 4);
-        @include p_Art(2, 2, 3, 3);
-      }
-    }
-  }
+	.wrapper {
+		#logo {
+			height: 10%;
+		}
+		#articles {
+			display: grid;
+			grid-area: 2/1/3/4;
+			#article {
+				display: grid;
+				grid-template-columns: minmax(50px, 10vw) 1fr minmax(50px, 10vw);
+				grid-template-rows: 1fr;
+			}
+			.article1 {
+				@include blueRibbon(1, 1, 2, 4);
+				@include p_Art(2, 2, 3, 3);
+				@include pArtButton(3, 2, 4, 3);
+			}
+			.article2 {
+				@include blueRibbon(1, 1, 2, 4);
+				@include p_Art(2, 2, 3, 3);
+				@include pArtButton2(3, 2, 4, 3);
+			}
+			.article3 {
+				@include blueRibbon(1, 1, 2, 4);
+				@include p_Art(2, 2, 3, 3);
+			}
+			.article4 {
+				@include blueRibbon(1, 1, 2, 4);
+				@include p_Art(2, 2, 3, 3);
+			}
+		}
+	}
 }
 @media (min-width: 720px) {
-  .wrapper {
-    grid-template-rows: 10% 90% repeat(10, 1fr);
-    #logo {
-      grid-area: 2/1/3/4;
-      height: 15%;
-    }
-    @include arrows(2, 2, 3, 3);
-    .banner {
-      z-index: 1;
-      position: fixed;
-      display: block;
-      grid-area: 1/1/2/4;
-      top: 0;
-      left: 0;
-      background-color: $backgroundcolor_Body;
-      font-family: Montserrat;
-      display: flex;
-      align-items: center;
-      &.on {
-        width: 100%;
-        height: 10%;
-        box-shadow: 0px 0px 2px rgba($color: #000000, $alpha: 0.1);
-      }
-      &.off {
-        width: 100%;
-        height: 10%;
-        box-shadow: 0px 0px 10px rgba($color: #7e7e7e, $alpha: 0.7);
-        background-color: rgba($color: #ffffff, $alpha: 1);
-      }
-      @include backArrow();
-      @include light();
+	.wrapper {
+		grid-template-rows: 10% 90% repeat(10, 1fr);
+		#logo {
+			grid-area: 2/1/3/4;
+			height: 15%;
+		}
+		@include arrows(2, 2, 3, 3);
+		.banner {
+			z-index: 1;
+			position: fixed;
+			display: block;
+			grid-area: 1/1/2/4;
+			top: 0;
+			left: 0;
+			background-color: $backgroundcolor_Body;
+			font-family: Montserrat;
+			display: flex;
+			align-items: center;
+			&.on {
+				width: 100%;
+				height: 10%;
+				box-shadow: 0px 0px 2px rgba($color: #000000, $alpha: 0.1);
+			}
+			&.off {
+				width: 100%;
+				height: 10%;
+				box-shadow: 0px 0px 10px rgba($color: #7e7e7e, $alpha: 0.7);
+				background-color: rgba($color: #ffffff, $alpha: 1);
+			}
+			@include backArrow();
+			@include light();
 
-      #elementMenu {
-        text-decoration: none;
-        font-family: $font_familly_Articles;
-        color: $redRibbon;
-        font-size: 20px;
-        cursor: pointer;
-      }
-      .elMenu_1 {
-        margin-left: 10vw;
-        margin-right: auto;
-      }
-      .elMenu_4 {
-        margin-right: 10vw;
-      }
-      .elMenu_2 {
-        margin-right: auto;
-      }
-      .elMenu_3 {
-        margin-right: auto;
-      }
-      #elementMenu:hover {
-        color: #000000;
-      }
-    }
+			#elementMenu {
+				text-decoration: none;
+				font-family: $font_familly_Articles;
+				color: $redRibbon;
+				font-size: 20px;
+				cursor: pointer;
+			}
+			.elMenu_1 {
+				margin-left: 10vw;
+				margin-right: auto;
+			}
+			.elMenu_4 {
+				margin-right: 10vw;
+			}
+			.elMenu_2 {
+				margin-right: auto;
+			}
+			.elMenu_3 {
+				margin-right: auto;
+			}
+			#elementMenu:hover {
+				color: #000000;
+			}
+		}
 
-    #header {
-      display: none;
-    }
-    #articles {
-      display: grid;
-      grid-area: 3/1/4/4;
-      #article {
-        display: grid;
-        grid-template-columns: minmax(50px, 10vw) repeat(2, 1fr) minmax(
-            50px,
-            10vw
-          );
-        grid-template-rows: 4fr;
-        column-gap: 20px;
-      }
-      .article1 {
-        @include blueRibbon(1, 1, 2, 5);
-        @include p_Art(2, 2, 3, 4);
-        @include pArtButton(3, 2, 4, 4);
-      }
-      .article2 {
-        @include blueRibbon(1, 1, 2, 5);
-        @include p_Art(2, 2, 3, 4);
-        @include pArtButton2(3, 2, 4, 4);
-      }
-      .article3 {
-        @include blueRibbon(1, 1, 2, 5);
-        @include p_Art(2, 2, 3, 4);
-      }
-    }
-    .footer {
-      grid-area: 4/1/5/4;
-      display: grid;
-      height: auto;
-      background-color: var(--backgroundcolor_Footer);
-      grid-template-columns:
-        minmax(20px, 10vw) repeat(3, 1fr)
-        minmax(20px, 10vw);
-      grid-template-rows: repeat(5, 1fr);
-      #email {
-        grid-area: 3/2/4/3;
-        justify-self: center;
-        align-self: center;
-        #iconMail {
-          padding: 10px;
-          font-size: $fontsize_Contact;
-          color: var(--font_color_White);
-        }
-        #iconMail:hover {
-          color: var(--font_color_Yellow);
-          transform: scale(1.5);
-        }
-      }
-      #facebook {
-        grid-area: 3/3/3/4;
-        justify-self: center;
-        align-self: center;
-        #iconFace {
-          padding: 10px;
-          font-size: $fontsize_Contact;
-          color: var(--font_color_White);
-        }
-        #iconFace:hover {
-          color: var(--font_color_Yellow);
-          transform: scale(1.5);
-        }
-      }
-      #linkedIn {
-        grid-area: 3/4/4/5;
-        justify-self: center;
-        align-self: center;
-        #iconLinkedIn {
-          padding: 10px;
-          font-size: 5vh;
-          color: var(--font_color_White);
-        }
-        #iconLinkedIn:hover {
-          color: var(--font_color_Yellow);
-          transform: scale(1.5);
-        }
-      }
-    }
-  }
+		#header {
+			display: none;
+		}
+		#articles {
+			display: grid;
+			grid-area: 3/1/4/4;
+			#article {
+				display: grid;
+				grid-template-columns: minmax(50px, 10vw) repeat(2, 1fr) minmax(50px, 10vw);
+				grid-template-rows: 4fr;
+				column-gap: 20px;
+			}
+			.article1 {
+				@include blueRibbon(1, 1, 2, 5);
+				@include p_Art(2, 2, 3, 4);
+				@include pArtButton(3, 2, 4, 4);
+			}
+			.article2 {
+				@include blueRibbon(1, 1, 2, 5);
+				@include p_Art(2, 2, 3, 4);
+				@include pArtButton2(3, 2, 4, 4);
+			}
+			.article3 {
+				@include blueRibbon(1, 1, 2, 5);
+				@include p_Art(2, 2, 3, 4);
+			}
+		}
+		.footer {
+			grid-area: 4/1/5/4;
+			display: grid;
+			height: auto;
+			background-color: var(--backgroundcolor_Footer);
+			grid-template-columns:
+				minmax(20px, 10vw) repeat(3, 1fr)
+				minmax(20px, 10vw);
+			grid-template-rows: repeat(5, 1fr);
+			#email {
+				grid-area: 3/2/4/3;
+				justify-self: center;
+				align-self: center;
+				#iconMail {
+					padding: 10px;
+					font-size: $fontsize_Contact;
+					color: var(--font_color_White);
+				}
+				#iconMail:hover {
+					color: var(--font_color_Yellow);
+					transform: scale(1.5);
+				}
+			}
+			#facebook {
+				grid-area: 3/3/3/4;
+				justify-self: center;
+				align-self: center;
+				#iconFace {
+					padding: 10px;
+					font-size: $fontsize_Contact;
+					color: var(--font_color_White);
+				}
+				#iconFace:hover {
+					color: var(--font_color_Yellow);
+					transform: scale(1.5);
+				}
+			}
+			#linkedIn {
+				grid-area: 3/4/4/5;
+				justify-self: center;
+				align-self: center;
+				#iconLinkedIn {
+					padding: 10px;
+					font-size: 5vh;
+					color: var(--font_color_White);
+				}
+				#iconLinkedIn:hover {
+					color: var(--font_color_Yellow);
+					transform: scale(1.5);
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) {
-  .wrapper {
-    grid-template-rows: 10% 90% repeat(10, 1fr);
-    #logo {
-      grid-area: 2/1/3/4;
-      height: 15%;
-    }
-    @include arrows(2, 2, 3, 3);
-    .banner {
-      font-size: $fontsize_Articles;
-    }
+	.wrapper {
+		grid-template-rows: 10% 90% repeat(10, 1fr);
+		#logo {
+			grid-area: 2/1/3/4;
+			height: 15%;
+		}
+		@include arrows(2, 2, 3, 3);
+		.banner {
+			font-size: $fontsize_Articles;
+		}
 
-    #header {
-      display: none;
-    }
-    #articles {
-      display: grid;
-      grid-area: 3/2/4/3;
-      max-width: 1152px;
-      box-shadow: 0 0 15px rgba($color: #c2c2c2, $alpha: 1);
-      border-radius: 10px;
-      #article {
-        display: grid;
-        grid-template-columns: minmax(50px, 10vw) repeat(2, 1fr) minmax(
-            50px,
-            10vw
-          );
-        grid-template-rows: 2fr;
-        column-gap: 20px;
-      }
-    }
-    .footer {
-      margin-top: 5vh;
+		#header {
+			display: none;
+		}
+		#articles {
+			display: grid;
+			grid-area: 3/2/4/3;
+			max-width: 1152px;
+			box-shadow: 0 0 15px rgba($color: #c2c2c2, $alpha: 1);
+			border-radius: 10px;
+			#article {
+				display: grid;
+				grid-template-columns: minmax(50px, 10vw) repeat(2, 1fr) minmax(50px, 10vw);
+				grid-template-rows: 2fr;
+				column-gap: 20px;
+			}
+		}
+		.footer {
+			margin-top: 5vh;
 
-      #contact {
-        grid-area: 2/2/3/3;
-        display: flex;
-        align-self: flex-start;
-        text-transform: uppercase;
-        color: var(--font_color_White);
-      }
-      #adress {
-        display: grid;
-        grid-area: 3/2/4/4;
-        justify-self: center;
-        align-self: flex-start;
-        h1 {
-          font-size: 4vh;
-          font-family: $font_familly_Articles;
-          text-transform: uppercase;
-          color: #d10c0c;
-        }
-      }
-      h2 {
-        display: grid;
-        grid-area: 4/2/5/4;
-        justify-self: center;
-        align-self: flex-start;
-        font-family: $font_familly_Articles;
-        font-size: 3vh;
-        color: #ffffff;
-        a {
-          font-size: 2.5vh;
-          color: #ffffff;
-          text-decoration: none;
-        }
-      }
-      h3 {
-        display: grid;
-        grid-area: 4/2/5/4;
-        margin-top: 2vh;
-        justify-self: center;
-        align-self: center;
-        font-size: 1.5vh;
-        color: #ffffff;
-      }
-      #email {
-        grid-area: 3/4/4/5;
-        justify-self: flex-start;
-        align-self: center;
-        #iconMail {
-          padding: 10px;
-          font-size: $fontsize_Contact;
-          color: var(--font_color_White);
-        }
-        #iconMail:hover {
-          color: var(--font_color_Yellow);
-          transform: scale(1.5);
-        }
-      }
-      #facebook {
-        grid-area: 3/4/4/5;
-        margin-left: 8vw;
-        justify-self: flex-start;
-        align-self: center;
-        #iconFace {
-          padding: 10px;
-          font-size: $fontsize_Contact;
-          color: var(--font_color_White);
-        }
-        #iconFace:hover {
-          color: var(--font_color_Yellow);
-          transform: scale(1.5);
-        }
-      }
-      #linkedIn {
-        grid-area: 3/4/4/5;
-        margin-left: 16vw;
-        justify-self: flex-start;
-        align-self: center;
-        #iconLinkedIn {
-          padding: 10px;
-          font-size: $fontsize_Contact;
-          color: var(--font_color_White);
-        }
-        #iconLinkedIn:hover {
-          color: var(--font_color_Yellow);
-          transform: scale(1.5);
-        }
-      }
-    }
-  }
+			#contact {
+				grid-area: 2/2/3/3;
+				display: flex;
+				align-self: flex-start;
+				text-transform: uppercase;
+				color: var(--font_color_White);
+			}
+			#adress {
+				display: grid;
+				grid-area: 3/2/4/4;
+				justify-self: center;
+				align-self: flex-start;
+				h1 {
+					font-size: 4vh;
+					font-family: $font_familly_Articles;
+					text-transform: uppercase;
+					color: #d10c0c;
+				}
+			}
+			h2 {
+				display: grid;
+				grid-area: 4/2/5/4;
+				justify-self: center;
+				align-self: flex-start;
+				font-family: $font_familly_Articles;
+				font-size: 3vh;
+				color: #ffffff;
+				a {
+					font-size: 2.5vh;
+					color: #ffffff;
+					text-decoration: none;
+				}
+			}
+			h3 {
+				display: grid;
+				grid-area: 4/2/5/4;
+				margin-top: 2vh;
+				justify-self: center;
+				align-self: center;
+				font-size: 1.5vh;
+				color: #ffffff;
+			}
+			#email {
+				grid-area: 3/4/4/5;
+				justify-self: flex-start;
+				align-self: center;
+				#iconMail {
+					padding: 10px;
+					font-size: $fontsize_Contact;
+					color: var(--font_color_White);
+				}
+				#iconMail:hover {
+					color: var(--font_color_Yellow);
+					transform: scale(1.5);
+				}
+			}
+			#facebook {
+				grid-area: 3/4/4/5;
+				margin-left: 8vw;
+				justify-self: flex-start;
+				align-self: center;
+				#iconFace {
+					padding: 10px;
+					font-size: $fontsize_Contact;
+					color: var(--font_color_White);
+				}
+				#iconFace:hover {
+					color: var(--font_color_Yellow);
+					transform: scale(1.5);
+				}
+			}
+			#linkedIn {
+				grid-area: 3/4/4/5;
+				margin-left: 16vw;
+				justify-self: flex-start;
+				align-self: center;
+				#iconLinkedIn {
+					padding: 10px;
+					font-size: $fontsize_Contact;
+					color: var(--font_color_White);
+				}
+				#iconLinkedIn:hover {
+					color: var(--font_color_Yellow);
+					transform: scale(1.5);
+				}
+			}
+		}
+	}
 }
 @media (min-width: 1400px) {
-  .wrapper {
-    grid-template-columns: minmax(50px, 1fr) minmax(1fr, 1152px) minmax(
-        50px,
-        1fr
-      );
-    grid-template-rows: 10% 90% repeat(10, 1fr);
-    .banner {
-      font-size: $fontsize_Articles;
-    }
-    #articles {
-      justify-self: center;
-    }
-    .footer {
-      #contact {
-        grid-area: 2/2/3/3;
-      }
-    }
-  }
+	.wrapper {
+		grid-template-columns: minmax(50px, 1fr) minmax(1fr, 1152px) minmax(50px, 1fr);
+		grid-template-rows: 10% 90% repeat(10, 1fr);
+		.banner {
+			font-size: $fontsize_Articles;
+		}
+		#articles {
+			justify-self: center;
+		}
+		.footer {
+			#contact {
+				grid-area: 2/2/3/3;
+			}
+		}
+	}
 }
